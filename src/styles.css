@@ -1,4 +1,36 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-   themes: abyss --default, abyss --prefersdark;
- }
+  themes: abyss --default, abyss --prefersdark;
+}
+
+/* 1️⃣ Declarar la fuente local */
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/montserrat/montserrat-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2️⃣ Definir la variable de font en el theme */
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+/* 3️⃣ Clase personalizada usando la variable del theme */
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+/* 🌟 5️⃣ Animación personalizada shade-in */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@theme {
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+}
