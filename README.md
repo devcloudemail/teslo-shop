@@ -50,7 +50,7 @@ Repositorio oficial: [github.com/devcloudemail/teslo-shop](https://github.com/de
 
 ---
 
-##Contribuciones
+## Contribuciones
 
 ¡Las contribuciones son bienvenidas!
 Para colaborar:
